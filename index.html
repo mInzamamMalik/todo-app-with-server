@@ -24,7 +24,7 @@
         function postTodo() {
             let todoText = document.querySelector("#todo").value
 
-            axios.post(`http://localhost:3000/todo`, {
+            axios.post(`https://fine-gold-hare-ring.cyclic.app/todo`, {
                 text: todoText
             })
                 .then(function (response) {
@@ -45,7 +45,7 @@
         }
 
         function getAllTodos() {
-            axios.get(`http://localhost:3000/todos`)
+            axios.get(`https://fine-gold-hare-ring.cyclic.app/todos`)
                 .then(function (response) {
                     console.log(response.data);
 
